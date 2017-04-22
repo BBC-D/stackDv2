@@ -1,0 +1,29 @@
+body {
+  margin:auto;
+}
+
+.project-title:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display:none;
+}
+
+.language:hover {
+  cursor: pointer;
+}
+
+.index-page-wrapper {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  width:100vw;
+}
