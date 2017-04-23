@@ -1,5 +1,10 @@
 $(document).ready(() => {
 
+$('.green').click(function() {
+  $('.input').toggleClass('hidden')
+  $('.green').hide()
+})
+
 $('.language1').click(function() {
   $('.t-1').toggleClass('hidden')
 })
@@ -19,6 +24,8 @@ $('.language4').click(function() {
 $('.project-title').click(function() {
   $('.tutorial').toggleClass('hidden')
 })
+
+
 
 
 

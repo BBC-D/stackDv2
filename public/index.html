@@ -10,20 +10,28 @@
       <div class="logo-wrapper">
         <img class="logo" src="stack-logo1.png" alt="">
       </div>
-      <div class="signup-login">
-        <a href="#"><h2>Sign Up</h2></a>
-        <a href="#"><h2>Login</h2></a>
+      <div class="signup-login-wrapper">
+        <a class="sl-button blue" href="#">Sign Up</a>
+        <div class="sl-button green">Login</div>
       </div>
 
       <div class="login-wrapper">
-        <label for="username"></label>
-        <input type="text" name="username" value="username">
-        <label for="password"></label>
-        <input type="text" name="description" value="description">
-        <a href="./profile.html"><div class="button">Login</div></a>
+        <div class="login">
+          <label for="username"></label>
+          <input class="input hidden" type="text" name="username" placeholder="Username"value="">
+        </div>
+        <div class="login">
+          <label for="password"></label>
+          <input class="input hidden" type="text" name="description" placeholder="Description" value="">
+        </div>
+        <div class="login-button-wrapper">
+          <a class="login-button input hidden" href="./profile.html">Login</a>
+        </div>
+
       </div>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

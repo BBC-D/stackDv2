@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin:auto;
 }
@@ -16,14 +20,240 @@ body {
 
 .index-page-wrapper {
   width:100%;
+  height:100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-image: url('coding-bg1.jpg');
+  background-size: auto;
 }
 
 .logo-wrapper {
   display: flex;
+  margin-top:2%;
   justify-content: center;
-  width:100vw;
+  width:100%;
+}
+
+.logo {
+  height:50vh;
+}
+
+.signup-login-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin:auto;
+}
+
+.sl-button {
+  width:15%;
+  margin:1%;
+  border: 2px solid white;
+  border-radius:5px;
+  padding:5px;
+  background-color: white;
+  text-decoration: none;
+  color: white;
+  height:5vh;
+  font-size: 1.5em;
+  background-color: forestgreen;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.blue {
+  background-color:blue;
+}
+
+.login-wrapper {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.login {
+  align-self: center;
+  margin:0.5%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width:25%;
+  border-radius:50px;
+  text-align: center;
+  padding:5px;
+}
+
+.login-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top:2%;
+}
+
+.login-button {
+  width: 20%;
+  border:2px solid white;
+  text-align: center;
+  padding: 8px;
+  background-color: forestgreen;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.profile-page-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin:auto;
+}
+
+.profile-bio-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: auto;
+}
+
+.profile-pic-wrapper{
+  width:25%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0.5%;
+}
+
+.profile-pic {
+  width: auto;
+  border: 2px solid grey;
+}
+
+.profile-bio-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile-bio-header {
+  width: 100%;
+}
+
+.profile-bio-content {
+  width: 100%;
+}
+
+.profile-bio-links {
+  width: 100%;
+}
+
+.editprofile {
+  font-size: .5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  text-decoration: none;
+  margin-right: 1%;
+}
+
+.editprofile:hover {
+    cursor: pointer;
+}
+
+.create-project-button-wrapper {
+  margin:2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.create-project-button-wrapper a {
+  border: 2px solid black;
+  padding:10px;
+  border-radius:20px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  width: 20%;
+  text-align: center;
+}
+
+.project-wrapper {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin:2%;
+  border: 2px solid black;
+  display: flex;justify-content: center;
+  width: 25%;
+  height: 12vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.experience-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height:100vh;
+  text-align: center;
+  background-image: url('coding-bg1.jpg');
+  background-size: auto;
+}
+
+.question-wrapper {
+  width: 100%;
+  margin:auto;
+  color:white;
+  font-size:2.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.bouton {
+  width: 50%;
+  border: 2px solid white;
+  margin: 4%;
+  border-radius:20px;
+}
+
+.bouton a {
+  text-decoration: none;
+  color: white;
+}
+
+.beginner {
+  background-color:forestgreen;
+}
+
+.intermediate {
+  background-color:yellow;
+}
+
+.intermediate a {
+  color: black;
+}
+
+.advanced {
+  background-color:darkred;
 }
