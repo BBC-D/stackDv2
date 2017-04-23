@@ -1,5 +1,10 @@
 $(document).ready(() => {
 
+$('.blue').click(function() {
+  $('.input').toggleClass('hidden')
+  $('.blue').hide()
+})
+
 $('.green').click(function() {
   $('.input').toggleClass('hidden')
   $('.green').hide()

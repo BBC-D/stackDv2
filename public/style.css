@@ -53,18 +53,18 @@ body {
   border: 2px solid white;
   border-radius:5px;
   padding:5px;
-  background-color: white;
   text-decoration: none;
   color: white;
   height:5vh;
   font-size: 1.5em;
-  background-color: forestgreen;
+  background-color: rgba(34,139,34,.7);
   text-align: center;
   vertical-align: middle;
+
 }
 
 .blue {
-  background-color:blue;
+  background-color:rgba(0,192,192,0.7);
 }
 
 .login-wrapper {
@@ -110,10 +110,13 @@ body {
 
 .profile-page-wrapper{
   width: 100%;
+  height:100vh;
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
   margin:auto;
+  background-image: url('coding-bg1.jpg');
+  background-size: auto;
 }
 
 .profile-bio-wrapper {
@@ -123,6 +126,7 @@ body {
   align-items: center;
   border: 2px solid black;
   margin-top: auto;
+  background-color: rgba(255,255,255, 0.7)
 }
 
 .profile-pic-wrapper{
@@ -133,7 +137,8 @@ body {
 }
 
 .profile-pic {
-  width: auto;
+  width: 50%;
+  height:50%;
   border: 2px solid grey;
 }
 
@@ -151,6 +156,7 @@ body {
 
 .profile-bio-content {
   width: 100%;
+  font-size: 15px;
 }
 
 .profile-bio-links {
@@ -158,7 +164,7 @@ body {
 }
 
 .editprofile {
-  font-size: .5em;
+  font-size: .8em;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -178,14 +184,14 @@ body {
   width: 100%;
 }
 
-.create-project-button-wrapper a {
+.new-project-button {
   border: 2px solid black;
   padding:10px;
   border-radius:20px;
   background-color: green;
   color: white;
   text-decoration: none;
-  width: 20%;
+  width: 30vw;
   text-align: center;
 }
 
@@ -202,6 +208,7 @@ body {
   display: flex;justify-content: center;
   width: 25%;
   height: 12vh;
+  background-color: lightgrey;
 }
 
 a {
@@ -256,4 +263,219 @@ a {
 
 .advanced {
   background-color:darkred;
+}
+
+.newproject-page-wrapper {
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-image: url('coding-bg1.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.technology-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  text-decoration: underline;
+}
+
+.technology-text-wrapper h1 {
+  border: 2px solid white;
+  padding:12px;
+  background-color: black;
+  vertical-align: middle;
+}
+
+.newproject-form-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.newproject-form-title  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin:1%;
+  text-align: center;
+}
+
+.newproject-form-description {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin:auto;
+  text-align: center;
+}
+
+.newproject-questions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.newproject-question {
+  width: 51%;
+  margin-top: 1%;
+  border: 2px dashed forestgreen;
+  padding:15px;
+  background-color: lightgrey;
+}
+
+.notes-wrapper {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.note {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.note h2 {
+  border: 2px solid white;
+  width: 20%;
+  background-color: black;
+  color: white;
+}
+
+.newproject-submit-button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1%;
+}
+
+.newproject-submit-button {
+  border: 2px solid white;
+  padding:5px;
+  border-radius:20px;
+  background-color: forestgreen;
+}
+
+.newproject-submit-button a {
+  color: white;
+}
+
+.singleview-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  width: 100%;
+  background-image: url('coding-bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.singleview-project {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid white;
+  color: white;
+  /*margin-left: auto;*/
+}
+
+.singleview-project h2 {
+  text-decoration: underline;
+}
+
+.singleview-project1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.project-checklist {
+  color:white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.project-title {
+  margin: auto;
+
+}
+
+.quote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /*margin: auto;*/
+}
+
+.quote h5 {
+  border: 2px solid white;
+  padding:10px;
+  font-size: 2em;
+}
+
+.language-wrapper {
+  width: 100%;
+  border: 2px solid white;
+  background-color: rgba(45,45,45, 0.6);
+  text-align: center;
+}
+
+.language {
+  width: 100%;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,.6);
+  font-size: 1.5em;
+}
+
+.tutorial {
+  text-align: left;
+  margin-left:5%;
+  font-size: 25px;
+}
+
+.update-delete-button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /*margin: 2%;*/
+}
+
+.singleview-button {
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(255,245,255,.8);
+}
+
+.justify-height {
+  height: 300px;
 }
