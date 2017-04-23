@@ -237,7 +237,6 @@ a {
   width:50%;
   margin:2%;;
   color:white;
-  font-size:2.5em;
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
@@ -247,6 +246,7 @@ a {
     background-color: rgba(45,45,45, 0.6);
     border: 2px solid white;
     padding:5px;
+    font-size:2.8em;
 }
 
 .bouton {
@@ -259,6 +259,7 @@ a {
 .bouton a {
   text-decoration: none;
   color: white;
+  font-size: 2.2em;
 }
 
 .beginner {
@@ -554,14 +555,13 @@ a {
 
 
 
-
 @media(max-width: 700px) {
   .justify-height {
     height: 100px;
   }
 
-  .question-wrapper {
-    font-size: 2em;
+  .question-wrapper h2 {
+    font-size: 1.8em;
   }
 
   .newproject-question {
@@ -606,22 +606,35 @@ a {
 
   .bouton {
     width: 100%;
-    margin: 5.5%;
+    margin: 11.5%;
     padding: 5px;
   }
 
   .experience-logo-wrapper {
-    margin: 6%;
+    margin: 2%;
   }
 
   .experience-logo-wrapper img {
     width: 55%;
     height:55%;
+    margin: 3%;
   }
 }
 
-@media(max-width:1000px) {
+@media(max-width:1200px) and (min-width:700px) {
   .newproject-question {
     margin-top:4%;
+  }
+
+  .question-wrapper {
+    font-size: 1em;
+  }
+
+  .bouton {
+    margin: 5%;
+  }
+
+  .experience-logo-wrapper {
+    margin: 3%;
   }
 }
