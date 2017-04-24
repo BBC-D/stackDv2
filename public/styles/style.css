@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url('coding-bg1.jpg');
+  background-image: url('../images/coding-bg1.jpg');
   background-size: auto;
 }
 
@@ -115,7 +115,7 @@ body {
   justify-content: center;
   flex-wrap:wrap;
   margin:auto;
-  background-image: url('coding-bg1.jpg');
+  background-image: url('../images/coding-bg1.jpg');
   background-size: auto;
 }
 
@@ -229,7 +229,7 @@ a {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  background-image: url('coding-bg1.jpg');
+  background-image: url('../images/coding-bg1.jpg');
   background-size: auto;
 }
 
@@ -293,7 +293,7 @@ a {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  background-image: url('coding-bg1.jpg');
+  background-image: url('../images/coding-bg1.jpg');
   background-size: auto;
   background-repeat: no-repeat;
   margin: auto;
@@ -412,7 +412,7 @@ a {
   align-items: flex-start;
   flex-wrap:wrap;
   width: 100%;
-  background-image: url('coding-bg1.jpg');
+  background-image: url('../images/coding-bg1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
