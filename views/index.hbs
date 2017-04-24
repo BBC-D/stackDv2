@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="index-page-wrapper">
-      <div class="logo-wrapper">
-        <img class="logo" src="/images/stack-logo1.png" alt="">
-      </div>
-      <div class="signup-login-wrapper">
+<div class="index-page-wrapper">
+  <div class="logo-wrapper">
+    <img class="logo" src="/images/stack-logo1.png" alt="">
+  </div>
+  <div class="signup-login-wrapper">
+    <a class="sl-button blue" href="/users/signup">Sign Up</a>
+    <a class="sl-button green" href="#">Login</a>
+  </div>
 
-        <a class="sl-button blue" href="/users/signup">Sign Up</a>
-        <a class="sl-button green" href="#">Login</a>
-      </div>
-
-      <div class="login-wrapper">
-        <div class="login">
-          <label for="username"></label>
-          <input class="input hidden" type="text" name="username" placeholder="Username"value="">
-        </div>
-        <div class="login">
-          <label for="password"></label>
-          <input class="input hidden" type="text" name="description" placeholder="Description" value="">
-        </div>
-        <div class="login-button-wrapper">
-          <a class="login-button input hidden" href="/profile.hbs">Login</a>
-        </div>
-
-      </div>
-
+  <div class="login-wrapper">
+    <div class="login">
+      <label for="user_name"></label>
+      <input class="input hidden" type="text" name="user_name" placeholder="Username"value="">
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/javascripts/main.js"></script>
-  </body>
-</html>
+    <div class="login">
+      <label for="password"></label>
+      <input class="input hidden" type="text" name="password" placeholder="password" value="">
+    </div>
+    <div class="login-button-wrapper">
+      <a class="login-button input hidden" href="/profile.hbs">Login</a>
+    </div>
+
+  </div>
+
+</div>
