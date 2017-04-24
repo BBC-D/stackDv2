@@ -1,11 +1,17 @@
 {
   "name": "functions",
-  "description": "Cloud Functions for Firebase",
+  "description": "stackD",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
     "express": "^4.15.2",
     "hbs": "^4.0.1",
     "knex": "^0.12.9",
+    "morgan": "~1.8.1",
     "pg": "^6.1.5"
   },
   "private": true
