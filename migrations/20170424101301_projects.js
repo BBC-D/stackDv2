@@ -6,10 +6,10 @@ exports.up = function(knex, Promise) {
     table.string('description');
     table.integer('experience').default(1).notNullable();
     table.json('tech').notNullable();
-    table.integer('owner').references('user')
+    table.integer('owner').references('personal')
   })
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExist('project');
+  return knex.schema.dropTable('project');
 };
