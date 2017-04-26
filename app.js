@@ -6,7 +6,8 @@ const bodyParser = require('body-parser');
 const pg = require('./db/knex.js');
 const index = require('./routes/index');
 const users = require('./routes/users');
-const profile = require('./routes/profile');
+const queries = require('./db/query');
+
 
 const app = express();
 
