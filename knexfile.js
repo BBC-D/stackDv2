@@ -1,7 +1,11 @@
 // Update with your config settings.
 require('dotenv').config();
-const pg = require('pg');
-pg.defaults.ssl = true;
+
+// uncomment befor pushing to heroku
+// const pg = require('pg');
+// pg.defaults.ssl = true;
+
+
 module.exports = {
 
   development: {
