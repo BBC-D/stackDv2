@@ -8,6 +8,7 @@ $('.blue').click(function() {
 $('.green').click(function() {
   $('.input').toggleClass('hidden')
   $('.green').hide()
+  $('form').toggleClass('hidden')
 })
 
 $('.language1').click(function() {
@@ -29,8 +30,6 @@ $('.language4').click(function() {
 $('.project-title').click(function() {
   $('.tutorial').toggleClass('hidden')
 })
-
-
 
 
 
