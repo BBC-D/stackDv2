@@ -7,9 +7,13 @@ const pg = require('./db/knex.js');
 const index = require('./routes/index');
 const users = require('./routes/users');
 const queries = require('./db/query');
+<<<<<<< HEAD
 const profile = require('./routes/profile')
 const hbs = require('hbs')
 
+=======
+const profile = require('./routes/profile');
+>>>>>>> b843399f1b885ac8d40e1264392a650f9ecfa435
 
 
 const app = express();
