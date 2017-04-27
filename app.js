@@ -7,8 +7,14 @@ const pg = require('./db/knex.js');
 const index = require('./routes/index');
 const users = require('./routes/users');
 const queries = require('./db/query');
+
+const profile = require('./routes/profile')
+const hbs = require('hbs')
+
 const profile = require('./routes/profile');
 
+
+const profile = require('./routes/profile');
 
 
 const app = express();
@@ -47,5 +53,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
 
 module.exports = app;
