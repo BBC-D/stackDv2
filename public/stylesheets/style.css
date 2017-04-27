@@ -8,8 +8,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url('../images/coding-bg1.jpg');
-  background-size: auto;
+  background-color: rgb(20, 20, 20);
 }
 
 form {
@@ -39,17 +38,19 @@ form {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-image: url('../images/coding-bg1.jpg');
+  background-size: auto;
 }
 
 .logo-wrapper {
   display: flex;
-  margin-top:2%;
+  margin: 5%;
   justify-content: center;
   width:100%;
 }
 
 .logo {
-  height:50vh;
+  height:25em;
 }
 
 .signup-login-wrapper {
@@ -60,7 +61,7 @@ form {
 }
 
 .sl-button {
-  width:15%;
+  width:10em;
   margin:1%;
   border: 2px solid white;
   border-radius:5px;
@@ -103,6 +104,28 @@ form {
   border-bottom: solid 1px;
 }
 
+h3 {
+  color: white;
+  margin-bottom: 0;
+}
+
+.header-with-username {
+  border: solid green 2px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border-radius: 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
 .login-button-wrapper {
   width: 100%;
   display: flex;
@@ -123,6 +146,17 @@ form {
   font-weight: 400;
 }
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .profile-page-wrapper{
   width: 100%;
   height:100vh;
@@ -130,8 +164,7 @@ form {
   justify-content: center;
   flex-wrap:wrap;
   margin:auto;
-  background-image: url('../images/coding-bg1.jpg');
-  background-size: auto;
+  background-color: auto;
 }
 
 .profile-bio-wrapper {
@@ -139,24 +172,26 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid black;
   margin-top: auto;
-  background-color: rgba(45,45,45, 0.6);
   color: white;
+  margin: 2em;
+
 }
 
-.profile-pic-wrapper{
-  width:25%;
+.profile-pic-wrapper {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 0.5%;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
-  width: 50%;
-  height:50%;
+  width: 100%;
+  height: 72%;
   border: 2px solid grey;
+  margin-left: 1.8em;
 }
+
+
 
 .profile-bio-content-wrapper {
   width: 100%;
@@ -204,11 +239,15 @@ form {
   width: 100%;
 }
 
+.project-content {
+  color: white;
+}
+
 .new-project-button {
-  border: 2px solid black;
+  border: 2px solid green;
   padding:10px;
   border-radius:20px;
-  background-color:rgba(34,139,34,.7);
+  background-color:black;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -226,11 +265,18 @@ form {
 
 .project {
   margin:2%;
-  border: 2px solid black;
-  display: flex;justify-content: center;
-  width: 25%;
-  height: 12vh;
-  background-color: lightgrey;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  height: 14em;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.prototype {
+  border: dashed 2px green;
 }
 
 a {
@@ -638,5 +684,20 @@ a {
 @media(max-width:1000px) {
   .newproject-question {
     margin-top:4%;
+  }
+}
+
+@media(max-width: 420px) {
+  .logo {
+    width:40vh;
+    height:100%;
+  }
+  .signup-login-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .logo-wrapper{
+    margin-top: 10%;
   }
 }
