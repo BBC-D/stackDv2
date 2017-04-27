@@ -31,6 +31,17 @@ $('.project-title').click(function() {
   $('.tutorial').toggleClass('hidden')
 })
 
+var reddit = $.get('https://galvanize-cors.herokuapp.com/https://www.reddit.com/r/quotes.json')
+  reddit.done((data) => {
+    var rando = Math.floor(Math.random() * 25) + 1
+    var redditContent = data.data.children[rando]
+    var quote = redditContent.data.title;
 
+    function displayContent(){
+      $('.profile-pic-wrapper').append("<h4 class='quote'>"+quote+"</h4>")
+      console.log('its working!')
+    }
+    displayContent()
+  })
 
 })
