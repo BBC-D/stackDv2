@@ -62,4 +62,23 @@ router.post('/:user_name/edit', (req ,res) => {
 
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports = router;
