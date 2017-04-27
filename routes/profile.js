@@ -27,5 +27,23 @@ router.post('/', (req, res) =>{
     })
   });
 });
+router.get('/:user_name/experience', (req, res) =>{
+  res.render('experience');
+
+})
+
+router.get('/profile/:user_name/experience/beginner', (req,res) => {
+  res.render()
+})
+
+router.get('/profile/:user_name/experience/intermediate', (req,res) => {
+  res.render()
+})
+
+router.get('/profile/:user_name/experience/advanced', (req,res) => {
+  res.render()
+})
+
+
 
 module.exports = router;
