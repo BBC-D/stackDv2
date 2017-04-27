@@ -1,5 +1,6 @@
 <div class="profile-page-wrapper">
 
+
   <div class="header-with-username">
     <h1 class="username">{{user.user_name}}</h1>
     <div class="header-wrapper">
@@ -24,7 +25,10 @@
 
 
   <div class="create-project-button-wrapper top-button">
+
+    <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button">Create Project</div></a>
     <a href="experience.html"><div class="new-project-button">create new project</div></a>
+    <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button">Create Project</div></a>
   </div>
 
   <div class="project-wrapper">

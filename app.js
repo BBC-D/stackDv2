@@ -12,9 +12,6 @@ const profile = require('./routes/profile')
 const hbs = require('hbs')
 
 
-
-
-
 const app = express();
 
 // view engine setup
