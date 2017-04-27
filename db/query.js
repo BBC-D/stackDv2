@@ -1,14 +1,11 @@
 var pg = require('./knex')
 
-funck
-
-
-function getAll(){
- return pg('post').select()
+function editProfile(column , data) {
+  return pg('personal').update();
 }
 
 function add(obj){
- return pg('post').insert(obj)
+ return pg('project').insert(obj)
 }
 
 function findUserIfExists(obj){
@@ -22,8 +19,5 @@ function userTable(obj){
  })
 }
 module.exports = {
- getAll,
- add,
- findUserIfExists,
- userTable
+
 }

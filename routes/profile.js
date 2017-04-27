@@ -12,6 +12,8 @@ router.get('/:user_name', (req, res) =>{
   })
 
 })
+
+
 router.post('/', (req, res) =>{
   var user = req.body;
   pg('personal').select().where('user_name', user.user_name).then((info) => {
@@ -27,9 +29,9 @@ router.post('/', (req, res) =>{
     })
   });
 });
+
 router.get('/:user_name/experience', (req, res) =>{
   res.render('experience');
-
 })
 
 router.get('/profile/:user_name/experience/beginner', (req,res) => {
@@ -40,10 +42,18 @@ router.get('/profile/:user_name/experience/intermediate', (req,res) => {
   res.render('intermediate')
 })
 
+router.post('/profile/:user_name/experience/intermediate', (req,res) => {
+
+})
 router.get('/profile/:user_name/experience/advanced', (req,res) => {
   res.render('advanced')
 })
 
-
+router.get('/:user_name/edit', (req, res) => {
+  res.render('editProfile')
+})
+router.post('/:user_name/edit', (req ,res) => {
+  res.redirect('/profile')
+})
 
 module.exports = router;
