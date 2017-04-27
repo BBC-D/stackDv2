@@ -1,9 +1,8 @@
 <div class="profile-page-wrapper">
-<<<<<<< HEAD
+
   <h1></h1>
   <div class="profile-bio-wrapper">
     <div class="profile-pic-wrapper">
-      <img class="profile-pic" src="../public/images/empty-profile1.jpg" alt="">
     </div>
     <div class="profile-bio-content-wrapper">
       <div class="profile-bio-header">
@@ -15,7 +14,6 @@
       </div>
       <div class="editprofile">
         <a href="/profile/{{user.user_name}}/edit"><p><em>Edit Profile</em></p></a>
-=======
 
   <div class="header-with-username">
     <h1 class="username">{{user.user_name}}</h1>
@@ -27,26 +25,26 @@
         <div class="profile-bio-content-wrapper">
           <div class="profile-bio-header">
           </div>
-          <div class="profile-bio-content"><p>Tell us a little bit about yourself!</p></div>
+          <div class="profile-bio-content"><p>{{user.bio}}</p></div>
           <div class="profile-bio-links">
             <h4>Share your projects here!</h4>
           </div>
           <div class="editprofile">
-            <a href="#"><p><em>Edit Profile</em></p></a>
+            <a href="/profile/{{user.user_name}}/edit"><p><em>Edit Profile</em></p></a>
           </div>
         </div>
->>>>>>> 564e0a7254281ccfe96f4801f332310ab7b7e05b
       </div>
     </div>
   </div>
 
 
   <div class="create-project-button-wrapper top-button">
-<<<<<<< HEAD
     <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button">Create Project</div></a>
-=======
     <a href="experience.html"><div class="new-project-button">create new project</div></a>
->>>>>>> 564e0a7254281ccfe96f4801f332310ab7b7e05b
+
+
+    <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button">Create Project</div></a>
+
   </div>
 
   <div class="project-wrapper">

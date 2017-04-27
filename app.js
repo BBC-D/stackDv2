@@ -8,11 +8,17 @@ const index = require('./routes/index');
 const users = require('./routes/users');
 const queries = require('./db/query');
 <<<<<<< HEAD
+<<<<<<< HEAD
 const profile = require('./routes/profile');
 =======
 const profile = require('./routes/profile')
 const hbs = require('hbs')
 >>>>>>> 564e0a7254281ccfe96f4801f332310ab7b7e05b
+=======
+
+const profile = require('./routes/profile');
+
+>>>>>>> c77b7668d7edafe491650f44100b6431142c652e
 
 
 
