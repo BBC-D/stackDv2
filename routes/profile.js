@@ -35,7 +35,7 @@ router.get('/:user_name/experience', (req, res) =>{
 })
 
 router.get('/profile/:user_name/experience/beginner', (req,res) => {
-  res.render('biginner')
+  res.render('beginner')
 })
 
 router.get('/profile/:user_name/experience/intermediate', (req,res) => {
@@ -50,10 +50,16 @@ router.get('/profile/:user_name/experience/advanced', (req,res) => {
 })
 
 router.get('/:user_name/edit', (req, res) => {
-  res.render('editProfile')
+  var user = req.params.user_name
+  console.log(user);
+  res.render('editProfile', {user: user})
 })
 router.post('/:user_name/edit', (req ,res) => {
-  res.redirect('/profile')
+  var user = req.params.user_name
+  pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
+    res.redirect('/profile/'+ user);
+  })
+
 })
 
 module.exports = router;
