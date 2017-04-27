@@ -111,6 +111,7 @@ form {
 .username {
   color: white;
   margin-bottom: 0;
+  border-bottom: solid 2px green;
 }
 
 .header-with-username {
@@ -182,6 +183,7 @@ form {
   margin-top: auto;
   color: white;
   margin: 2em;
+  margin-left: 0;
 
 }
 
@@ -189,6 +191,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 39em;
+  margin: 3%;
 }
 
 .profile-pic {
