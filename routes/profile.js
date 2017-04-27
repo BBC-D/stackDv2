@@ -33,15 +33,15 @@ router.get('/:user_name/experience', (req, res) =>{
 })
 
 router.get('/profile/:user_name/experience/beginner', (req,res) => {
-  res.render()
+  res.render('biginner')
 })
 
 router.get('/profile/:user_name/experience/intermediate', (req,res) => {
-  res.render()
+  res.render('intermediate')
 })
 
 router.get('/profile/:user_name/experience/advanced', (req,res) => {
-  res.render()
+  res.render('advanced')
 })
 
 
