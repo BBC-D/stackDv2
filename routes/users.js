@@ -4,37 +4,6 @@ var router = express.Router();
 var bcrypt = require('bcrypt');
 const saltRounds = 10;
 
-
-
-
-
-// bcrypt.genSalt(saltRounds, password, (err, salt, password) =>{
-//   if(err){
-//     console.error(err)
-//     process.exit()
-//   }
-//   console.log('salt', salt)
-//
-//   bcrypt.hash(password, salt, (err, hash) =>{
-//     if(err){
-//       console.error(err)
-//       process.exit()
-//
-//       }
-//       console.log('hash', hash)
-//   })
-// })
-//
-// bcrypt.compare(password, hash, (err, isMatch) =>{
-//   if(err){
-//     console.error(err)
-//     process.exit()
-//
-//     }
-//
-//     console.log('ismatch', isMatch)
-// })
-
 /* GET users listing. */
 router.get('/signup', function(req, res) {
   res.render('signup');
