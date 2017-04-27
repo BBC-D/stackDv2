@@ -32,15 +32,15 @@ router.get('/:user_name/experience', (req, res) =>{
 
 })
 
-router.get('/profile/:user_name/experience/beginner', (req,res) => {
-  res.render('biginner')
+router.get('/:user_name/experience/beginner', (req,res) => {
+  res.render('beginner')
 })
 
-router.get('/profile/:user_name/experience/intermediate', (req,res) => {
+router.get('/:user_name/experience/intermediate', (req,res) => {
   res.render('intermediate')
 })
 
-router.get('/profile/:user_name/experience/advanced', (req,res) => {
+router.get('/:user_name/experience/advanced', (req,res) => {
   res.render('advanced')
 })
 

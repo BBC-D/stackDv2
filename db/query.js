@@ -1,7 +1,5 @@
 var pg = require('./knex')
 
-funck
-
 
 function getAll(){
  return pg('post').select()
