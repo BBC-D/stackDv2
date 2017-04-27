@@ -76,6 +76,10 @@ form {
 
 }
 
+.quote {
+  color: white;
+}
+
 .blue {
   background-color:rgba(0,192,192,0.7);
 }
