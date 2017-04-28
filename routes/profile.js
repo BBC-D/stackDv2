@@ -74,18 +74,19 @@ router.post('/:user_name/edit', (req ,res) => {
 //   console.log(Title);
 //   res.render('singleview', {Title})
 // })
-router.post('/project/:Title', (req ,res) => {
+router.post('/project', (req ,res) => {
   console.log(req.body);
-  const project = {
+  var project = {
     Title: req.body.Title,
     description: req.body.description,
     tech: req.body.tech
   }
+  // res.json({project});
   pg('project')
-    .insert(project, 'Title')
+    .insert(project, 'project.Title')
     .then(Titles => {
       const Title = Titles[0]
-      res.redirect('/singleview/')
+      res.json({project}).redirect(`${Title}`)
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)
@@ -93,22 +94,3 @@ router.post('/project/:Title', (req ,res) => {
   // })
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-module.exports = router;
