@@ -31,7 +31,8 @@ router.post('/', (req, res) =>{
 });
 
 router.get('/:user_name/experience', (req, res) =>{
-  res.render('experience');
+  var user = req.params.user_name
+  res.render('experience', {user:user});
 })
 
 
@@ -56,13 +57,11 @@ router.get('/profile/:user_name/experience/advanced', (req,res) => {
 router.get('/:user_name/edit', (req, res) => {
   var user = req.params.user_name
   console.log(user);
-
   res.render('editProfile', {user})
 })
 router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
   console.log(user);
-
   pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
   })
@@ -70,6 +69,30 @@ router.post('/:user_name/edit', (req ,res) => {
 })
 
 
+// router.get('/:user_name/', (req, res) => {
+//   var Title = req.params.Title
+//   console.log(Title);
+//   res.render('singleview', {Title})
+// })
+router.post('/project/:Title', (req ,res) => {
+  console.log(req.body);
+  const project = {
+    Title: req.body.Title,
+    description: req.body.description,
+    tech: req.body.tech
+  }
+  pg('project')
+    .insert(project, 'Title')
+    .then(Titles => {
+      const Title = Titles[0]
+      res.redirect('/singleview/')
+  })
+  // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
+  //   console.log(req.body)
+  //   res.redirect('/singleview/'+ {Title:Title});
+  // })
+
+})
 
 
 
