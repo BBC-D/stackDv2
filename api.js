@@ -142,11 +142,11 @@ const tech = {
 
 function setPoject(info) {
 switch (info) {
-  case Bapp:
+  case "Beginnerapp":
     return tech.beginner
-  case Iapp:
+  case "Intermediateapp":
     return tech.intermediate
-  case Aapp:
+  case "Advancedapp":
     return tech.advanced
   break;
   default:

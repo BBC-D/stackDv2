@@ -5,18 +5,18 @@
     <h1 class="username">{{user.user_name}}</h1>
     <div class="header-wrapper">
       <div class="profile-pic-wrapper">
-
+        <!-- quote goes here -->
       </div>
       <div class="profile-bio-wrapper">
         <div class="profile-bio-content-wrapper">
           <div class="profile-bio-header">
           </div>
           <div class="profile-bio-content"><p>{{user.bio}}</p></div>
-          <div class="profile-bio-links">
-            <h4><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//glacial-cliffs-99290.herokuapp.com/">Share on Facebook</a></h4>
-          </div>
+        </div>
+        <div class="profile-bio-links">
+          <h4><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//glacial-cliffs-99290.herokuapp.com/">Share on Facebook</a></h4>
           <div class="editprofile">
-            <a href="{{user.user_name}}/edit"><p><em>Edit Profile</em></p></a>
+            <a href="{{user.user_name}}/edit"><p><em>edit_profile</em></p></a>
           </div>
         </div>
       </div>
@@ -24,32 +24,41 @@
   </div>
 
 
+  <!-- <h1 class="username">{{user.user_name}}</h1>
+  <div class="profile-pic-wrapper">
+    <!-- quote goes here -->
+  <!-- </div>
+  <div class="profile-bio-content">
+    <p>{{user.bio}}</p>
+  </div>
+  <h4><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//glacial-cliffs-99290.herokuapp.com/">Share on Facebook</a></h4>
+  <div class="editprofile">
+    <a href="{{user.user_name}}/edit"><p><em>edit_profile</em></p></a>
+  </div> -->
+
+
+
+
+
   <div class="create-project-button-wrapper top-button">
 
 
-    <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button devinClass">Create Project</div></a>
+    <a href="/profile/{{user.user_name}}/experience"><div class="new-project-button devinClass">create_project</div></a>
 
 
   </div>
 
   <div class="project-wrapper">
-    <div class="project devinClass">
-      <a href="experience.html"><div class="project-content ">+ create new project</div></a>
+      <!-- append new projects here  -->
+    </div> -->
+    <div class="project prototype">
+      <a><div class="project-content">project_01</div></a>
     </div>
     <div class="project prototype">
-      <a><div class="project-content">project 1</div></a>
+      <a><div class="project-content">project_02</div></a>
     </div>
     <div class="project prototype">
-      <a><div class="project-content">project 2</div></a>
-    </div>
-    <div class="project prototype">
-      <a><div class="project-content">project 3</div></a>
-    </div>
-    <div class="project prototype">
-      <a><div class="project-content">project 4</div></a>
-    </div>
-    <div class="project prototype">
-      <a><div class="project-content">project 5</div></a>
+      <a><div class="project-content">project_03</div></a>
     </div>
   </div>
 </div>

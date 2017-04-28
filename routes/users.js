@@ -8,6 +8,7 @@ const saltRounds = 10;
 router.get('/signup', function(req, res) {
   res.render('signup');
 });
+
 router.post('/signup',function(req, res) {
   console.log(req.body);
   var info = req.body;
