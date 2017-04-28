@@ -255,7 +255,7 @@ form {
   color: white;
 }
 
-.new-project-button:hover{
+.devinClass:hover{
 
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 102, 0, .8), 0 0 20px rgba(255, 102, 0, .4);
@@ -273,8 +273,8 @@ form {
   color: white;
   text-decoration: none;
   width: 30vw;
-  text-align: center;
-  margin-top:5%;
+  align-self: center;
+  margin-top:18%;
 }
 
 .project-wrapper {
@@ -294,11 +294,13 @@ form {
   height: 14em;
   background-color: rgba(0, 0, 0, .7);
   border-radius: 20px;
+  color:white
 }
 
 .project:hover{
   -webkit-transform: translateY(-8px);
  transform: translateY(-8px);
+
 }
 
 .prototype {
@@ -687,10 +689,6 @@ a {
   }
 
 
-  }
-  .new-project-button{
-    align-self: center;
-    margin-top:18%;
   }
 
   .bouton {

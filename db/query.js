@@ -3,6 +3,10 @@ var pg = require('./knex')
 
 function getAll(){
  return pg('post').select()
+
+function editProfile(column , data) {
+  return pg('personal').update();
+
 }
 
 function editProfile(column , data) {
@@ -25,5 +29,6 @@ function userTable(obj){
  })
 }
 module.exports = {
+
 
 }
