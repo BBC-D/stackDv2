@@ -71,8 +71,12 @@ router.post('/:user_name/edit', (req ,res) => {
 //   console.log(Title);
 //   res.render('singleview', {Title})
 // })
+<<<<<<< HEAD
 
 router.post('/project/beginner', (req ,res) => {
+=======
+router.post('/project', (req ,res) => {
+>>>>>>> ed00746f8f7ef2b2be4498566a1b543e0f2efdb1
   console.log(req.body);
   var project = {
     Title: req.body.Title,
@@ -84,7 +88,11 @@ router.post('/project/beginner', (req ,res) => {
     .insert(project, 'project.Title')
     .then(Titles => {
       const Title = Titles[0]
+<<<<<<< HEAD
       res.render('singleview', {project})
+=======
+      res.json({project}).redirect(`${Title}`)
+>>>>>>> ed00746f8f7ef2b2be4498566a1b543e0f2efdb1
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)
