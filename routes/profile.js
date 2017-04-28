@@ -76,16 +76,17 @@ router.post('/:user_name/edit', (req ,res) => {
 // })
 router.post('/project', (req ,res) => {
   console.log(req.body);
-  const project = {
+  var project = {
     Title: req.body.Title,
     description: req.body.description,
     tech: req.body.tech
   }
+  res.json({project});
   pg('project')
     .insert(project, 'Title')
     .then(Titles => {
       const Title = Titles[0]
-      res.redirect(`/${Title}`)
+      res.json({project}).redirect(`/project/${Title}`)
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)
