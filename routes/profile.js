@@ -81,7 +81,7 @@ router.post('/project', (req ,res) => {
     description: req.body.description,
     tech: req.body.tech
   }
-  res.json({project});
+  // res.json({project});
   pg('project')
     .insert(project, 'Title')
     .then(Titles => {
