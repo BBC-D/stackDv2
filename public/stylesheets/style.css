@@ -524,7 +524,7 @@ a {
   color: white;
 }
 
-.singleview-page-wrapper {
+/*.singleview-page-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -533,7 +533,7 @@ a {
   background-image: url('../images/coding-bg1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 
 .singleview-project {
   width: 100%;

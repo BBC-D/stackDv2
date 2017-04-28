@@ -45,11 +45,9 @@ router.get('/:user_name/experience/intermediate', (req,res) => {
 
 
 router.get('/:user_name/experience/advanced', (req,res) => {
-
-
 })
-router.get('/profile/:user_name/experience/advanced', (req,res) => {
 
+router.get('/profile/:user_name/experience/advanced', (req,res) => {
   res.render('advanced')
 })
 
@@ -71,20 +69,8 @@ router.post('/:user_name/edit', (req ,res) => {
 //   console.log(Title);
 //   res.render('singleview', {Title})
 // })
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 router.post('/project/beginner', (req ,res) => {
-=======
-router.post('/project', (req ,res) => {
->>>>>>> ed00746f8f7ef2b2be4498566a1b543e0f2efdb1
-=======
-
-
-router.post('/project/beginner', (req ,res) => {
-
-
->>>>>>> 55f3895aded4d0d3b86958891fec49c40919647c
   console.log(req.body);
   var project = {
     Title: req.body.Title,
@@ -92,27 +78,13 @@ router.post('/project/beginner', (req ,res) => {
     tech: req.body.tech
   }
   // res.json({project});
-  pg('project')
-    .insert(project, 'project.Title')
-    .then(Titles => {
-      const Title = Titles[0]
-<<<<<<< HEAD
-<<<<<<< HEAD
-      res.render('singleview', {project})
-=======
-      res.json({project}).redirect(`${Title}`)
->>>>>>> ed00746f8f7ef2b2be4498566a1b543e0f2efdb1
-=======
+  // pg('project')
+  //   .insert(project, 'project.Title')
+  //   .then(Titles => {
+  //     const Title = Titles[0]
 
       res.render('singleview', {project})
-
->>>>>>> 55f3895aded4d0d3b86958891fec49c40919647c
-  })
-  // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
-  //   console.log(req.body)
-  //   res.redirect('/singleview/'+ {Title:Title});
   // })
-
 })
 
 
