@@ -10,7 +10,6 @@ router.get('/:user_name', (req, res) =>{
   pg('personal').select().where('user_name', user).then((info) => {
     res.render('profile', {user: info[0]});
   })
-
 })
 
 
@@ -65,16 +64,18 @@ router.post('/:user_name/edit', (req ,res) => {
   pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
   })
-
 })
-
 
 // router.get('/:user_name/', (req, res) => {
 //   var Title = req.params.Title
 //   console.log(Title);
 //   res.render('singleview', {Title})
 // })
-router.post('/project', (req ,res) => {
+
+
+router.post('/project/beginner', (req ,res) => {
+
+
   console.log(req.body);
   var project = {
     Title: req.body.Title,
@@ -86,7 +87,9 @@ router.post('/project', (req ,res) => {
     .insert(project, 'project.Title')
     .then(Titles => {
       const Title = Titles[0]
-      res.json({project}).redirect(`${Title}`)
+
+      res.render('singleview', {project})
+
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)

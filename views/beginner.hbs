@@ -2,9 +2,9 @@
     <div class="technology-text-wrapper">
         <h1>Technology For Your Next Big Idea</h1>
     </div>
-    <form class="newproject-form-wrapper" action="/project/:Title" method="post">
+    <form class="newproject-form-wrapper" action="/profile/project/beginner" method="post">
         <div class="newproject-form-title">
-            <input type="text" name="title" id="title" placeholder="Project Title" value="">
+            <input type="text" name="Title" id="title" placeholder="Project Title" value="">
         </div>
         <div class="newproject-form-description">
             <textarea name="description" rows="8" cols="80" placeholder="Project Description"></textarea>
@@ -12,7 +12,7 @@
         <div class="newproject-questions">
             <div class="newproject-question type">
                 <h3>What Are you trying to build?</h3>
-                <select class="select" name="">
+                <select class="select" name="tech">
           <optgroup label="Web Application">
             <option value="application">Application</option>
             <option value="game">Game</option>
@@ -35,7 +35,6 @@
         </select> -->
       </select>
         </div>
-
       <!-- <div class="newproject-question tech">
         <h3>Which device(s) are you programming for?</h3>
         <select class="select" name="">
