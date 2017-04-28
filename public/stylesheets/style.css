@@ -294,6 +294,7 @@ form {
   height: 14em;
   background-color: rgba(0, 0, 0, .7);
   border-radius: 20px;
+  color:white
 }
 
 .project:hover{
