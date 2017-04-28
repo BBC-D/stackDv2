@@ -56,10 +56,11 @@ router.get('/profile/:user_name/experience/advanced', (req,res) => {
 router.get('/:user_name/edit', (req, res) => {
   var user = req.params.user_name
   console.log(user);
-  res.render('editProfile', {user: user})
+  res.render('editProfile', {user})
 })
 router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
+  console.log(user);
   pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
   })
