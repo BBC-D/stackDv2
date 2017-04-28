@@ -31,7 +31,8 @@ router.post('/', (req, res) =>{
 });
 
 router.get('/:user_name/experience', (req, res) =>{
-  res.render('experience');
+  var user = req.params.user_name
+  res.render('experience', {user:user});
 })
 
 
@@ -56,13 +57,11 @@ router.get('/profile/:user_name/experience/advanced', (req,res) => {
 router.get('/:user_name/edit', (req, res) => {
   var user = req.params.user_name
   console.log(user);
-
   res.render('editProfile', {user})
 })
 router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
   console.log(user);
-
   pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
   })
@@ -70,6 +69,19 @@ router.post('/:user_name/edit', (req ,res) => {
 })
 
 
+router.get('/:user_name/project.title', (req, res) => {
+  var title = req.params.title
+  console.log(title);
+  res.render('singleview', {title})
+})
+router.post('/:user_name/project.title', (req ,res) => {
+  var user = req.params.user_name
+  console.log(user);
+  pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
+    res.redirect('/profile/'+ {title:title});
+  })
+
+})
 
 
 
