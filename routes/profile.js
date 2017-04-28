@@ -74,7 +74,7 @@ router.post('/:user_name/edit', (req ,res) => {
 //   console.log(Title);
 //   res.render('singleview', {Title})
 // })
-router.post('/project/:Title', (req ,res) => {
+router.post('/project', (req ,res) => {
   console.log(req.body);
   const project = {
     Title: req.body.Title,
@@ -85,7 +85,7 @@ router.post('/project/:Title', (req ,res) => {
     .insert(project, 'Title')
     .then(Titles => {
       const Title = Titles[0]
-      res.redirect('/singleview/')
+      res.redirect(`/${Title}`)
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)
