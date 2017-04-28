@@ -2,7 +2,7 @@
     <div class="technology-text-wrapper">
         <h1>Technology For Your Next Big Idea</h1>
     </div>
-    <form class="newproject-form-wrapper" action="/:user_name/project.title">
+    <form class="newproject-form-wrapper" action="/project/:Title" method="post">
         <div class="newproject-form-title">
             <input type="text" name="title" id="title" placeholder="Project Title" value="">
         </div>
@@ -14,12 +14,12 @@
                 <h3>What Are you trying to build?</h3>
                 <select class="select" name="">
           <optgroup label="Web Application">
-            <option value="">Application</option>
-            <option value="">Game</option>
+            <option value="application">Application</option>
+            <option value="game">Game</option>
           </optgroup>
           <optgroup label="Mobile Application">
-             <option value="">Application</option>
-             <option value="">Game</option>
+             <option value="application">Application</option>
+             <option value="game">Game</option>
           </optgroup>
 
           <!-- <optgroup label="Raspberry Pi">
@@ -50,15 +50,10 @@
       </div> -->
     </div>
     <div class="newproject-submit-button-wrapper">
-      <a>
         <button type="submit" class="newproject-submit-button">
           Submit
         </button>
-      </a>
+    </div>
 
   </form>
-
-
-
-  </div>
 </div>
