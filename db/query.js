@@ -3,7 +3,7 @@ var pg = require('./knex')
 
 function getAll(){
  return pg('post').select()
-
+}
 function editProfile(column , data) {
   return pg('personal').update();
 
@@ -28,7 +28,10 @@ function userTable(obj){
    password: obj.password
  })
 }
+
+
 module.exports = {
-
-
+  add,
+  userTable,
+  findUserIfExists
 }

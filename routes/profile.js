@@ -63,7 +63,7 @@ router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
   console.log(user);
 
-  pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
+  pg('personal').update(req.body).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
   })
 
