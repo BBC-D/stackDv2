@@ -9,6 +9,11 @@ function editProfile(column , data) {
 
 }
 
+function editProfile(column , data) {
+  return pg('personal').update();
+
+}
+
 function add(obj){
  return pg('project').insert(obj)
 }
@@ -25,5 +30,5 @@ function userTable(obj){
 }
 module.exports = {
 
-}
+
 }
