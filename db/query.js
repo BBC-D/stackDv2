@@ -29,7 +29,10 @@ function userTable(obj){
    password: obj.password
  })
 }
+
+
 module.exports = {
-
-
+  add,
+  userTable,
+  findUserIfExists
 }
