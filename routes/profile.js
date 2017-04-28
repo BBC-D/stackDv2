@@ -72,7 +72,10 @@ router.post('/:user_name/edit', (req ,res) => {
 //   res.render('singleview', {Title})
 // })
 
+
 router.post('/project/beginner', (req ,res) => {
+
+
   console.log(req.body);
   var project = {
     Title: req.body.Title,
@@ -84,7 +87,9 @@ router.post('/project/beginner', (req ,res) => {
     .insert(project, 'project.Title')
     .then(Titles => {
       const Title = Titles[0]
+
       res.render('singleview', {project})
+
   })
   // pg('project').update('created-project', req.body).where('Title', Title).then(()=>{
   //   console.log(req.body)
