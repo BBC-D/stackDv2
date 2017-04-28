@@ -30,38 +30,59 @@ router.post('/', (req, res) =>{
   });
 });
 
+
+router.post('/:user_name/experience/advanced', (req,res) => {
+var user = req.params.user_name
+  pg('project').insert({
+    Title: req.body.Title;
+    description: req.body.description,
+    tech: getteck(),
+    owner: pg('personal').select('id').where('user_name', user)
+  })
+})
 router.get('/:user_name/experience', (req, res) =>{
-  res.render('experience');
+  var user = req.params.user_name
+  res.render('experience', {user});
 })
 
+router.post('/:user_name/experience/advanced', (req,res) => {
+var user = req.params.user_name
 
+})
 router.get('/:user_name/experience/beginner', (req,res) => {
-  res.render('beginner')
+  var user = req.params.user_name
+  res.render('beginner', {user})
 })
 
+router.post('/:user_name/experience/advanced', (req,res) => {
+var user = req.params.user_name
+
+})
 router.get('/:user_name/experience/intermediate', (req,res) => {
-  res.render('intermediate')
+  var user = req.params.user_name
+  res.render('intermediate', {user})
 })
 
 
+router.post('/:user_name/experience/advanced', (req,res) => {
+var user = req.params.user_name
+
+})
 router.get('/:user_name/experience/advanced', (req,res) => {
-
-
+var user = req.params.user_name
+  res.render('advanced', {user})
 })
-router.get('/profile/:user_name/experience/advanced', (req,res) => {
 
-  res.render('advanced')
-})
+
+
+
 
 router.get('/:user_name/edit', (req, res) => {
   var user = req.params.user_name
-  console.log(user);
-
   res.render('editProfile', {user})
 })
 router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
-  console.log(user);
 
   pg('personal').update(req.body).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ user);
