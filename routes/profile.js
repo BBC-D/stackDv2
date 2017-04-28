@@ -83,7 +83,7 @@ router.post('/project', (req ,res) => {
   }
   // res.json({project});
   pg('project')
-    .insert(project, 'Title')
+    .insert(project, 'project.Title')
     .then(Titles => {
       const Title = Titles[0]
       res.json({project}).redirect(`/project/${Title}`)
