@@ -77,7 +77,7 @@ router.get('/:user_name/project.title', (req, res) => {
 router.post('/:user_name/project.title', (req ,res) => {
   var user = req.params.user_name
   console.log(user);
-  pg('personal').update('bio', req.body.bio).where('user_name', user).then(()=>{
+  pg('project').update('bio', req.body.bio).where('user_name', user).then(()=>{
     res.redirect('/profile/'+ {title:title});
   })
 
