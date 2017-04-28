@@ -47,7 +47,7 @@ router.get('/:user_name/experience/intermediate', (req,res) => {
 router.get('/:user_name/experience/advanced', (req,res) => {
 })
 
-router.get('/profile/:user_name/experience/advanced', (req,res) => {
+router.get('/:user_name/experience/advanced', (req,res) => {
   res.render('advanced')
 })
 
@@ -56,6 +56,8 @@ router.get('/:user_name/edit', (req, res) => {
   console.log(user);
   res.render('editProfile', {user})
 })
+
+
 router.post('/:user_name/edit', (req ,res) => {
   var user = req.params.user_name
   console.log(user);
@@ -77,14 +79,12 @@ router.post('/project/beginner', (req ,res) => {
     description: req.body.description,
     tech: req.body.tech
   }
-  // res.json({project});
-  // pg('project')
-  //   .insert(project, 'project.Title')
-  //   .then(Titles => {
-  //     const Title = Titles[0]
-
+  pg('project')
+    .insert(project, 'project.Title')
+    .then(Titles => {
+      const Title = Titles[0]
       res.render('singleview', {project})
-  // })
+  })
 })
 
 
