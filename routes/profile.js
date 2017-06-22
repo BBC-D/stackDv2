@@ -17,7 +17,6 @@ router.get('/:user_name', function(req, res, next) {
 router.post('/', (req, res) =>{
   var user = req.body;
   knex('users').select().where('user_name', user.user_name).then((info) => {
-    console.log(info[0].id);
         res.redirect('/profile/' + user.user_name);
     })
   });
@@ -25,7 +24,6 @@ router.post('/', (req, res) =>{
   router.get('/:user_name/newidea/add', function(req, res, next) {
     var user_name = req.params.user_name
     const num = Math.floor((Math.random() * 4) + 1);
-    // var id = req.params.id
     const type = [{
         type: 'My Idea',
         adj: 'Great',
@@ -52,7 +50,6 @@ router.post('/', (req, res) =>{
         user_name: user_name
       }
     ];
-    // knex('users').select().where('id', id).then(() => {
       res.render('newIdea', type[(num)]);
   });
 
@@ -81,6 +78,48 @@ router.post('/', (req, res) =>{
       res.render('singleview', data[0])
     })
   })
+
+  router.get('/:user_name/:title', function(req, res, next) {
+    console.log('made it');
+    var title = req.params.title
+    knex('projects').select().where('title', title).then((data) => {
+        res.render('singleview',data[0])
+      })
+    })
+
+    router.get('/:user_name/:title/edit', (req, res, next) => {
+      var title = req.params.title
+      knex('projects').select().where('title', title).then((data) => {
+        res.render('edit', data[0])
+      })
+    })
+
+
+  router.post('/user_name/:title/updated', (req, res, next) => {
+    var title = req.params.title
+    var project = req.body
+    knex('projects').where('title', title).update({
+      'title': project.title,
+      'description': project.description,
+      'skill': project.skill,
+      'database': project.database,
+      'emailList': project.emailList,
+      'timeCommit': project.timeCommit,
+      'mainFeature': project.mainFeature,
+      'subFeature1': project.subFeature1,
+      'subFeature2': project.subFeature2
+    }).then((data) => {
+      res.redirect('/' + title)
+    })
+  })
+
+  router.get('/user_name/:title/edit/delete', (req, res, next) => {
+    var title = req.params.title
+    knex('projects').where('title', title).del().then(() => {
+      res.redirect('/profile/' + user_name)
+    })
+  })
+
 
 
 
