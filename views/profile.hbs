@@ -14,11 +14,10 @@
 <h3>Your Current Projects:</h3>
 <div class="flex" style="width:85%;">
     {{#each info}}
-    <a href="/profile/{{user_name}}/{{project_id}}">
-      <a class="project btn btn-primary">
+    <label for="">Idea #{{project_id}}</label>
+      <a href="/{{title}}" class="project btn btn-primary">
         <h2>{{title}}</h2>
       </a>
-    </a>
     {{/each}}
 </div>
 

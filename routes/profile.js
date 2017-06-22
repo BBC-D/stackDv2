@@ -7,7 +7,6 @@ var knex = require('../db/knex');
 // Router Mounted at localhost3000:profile/
 
 router.get('/:user_name', function(req, res, next) {
-  console.log(req.params);
   var user = req.params.user_name
   knex('projects').select().then((info)=> {
     res.render('profile', { info: info,
@@ -72,6 +71,14 @@ router.post('/', (req, res) =>{
       subFeature2: body.subFeature2
     }).then(() => {
       res.redirect('/profile/' + user_name)
+    })
+  })
+
+  router.get('/:title', function(req, res, next) {
+    console.log('made it');
+    var title = req.params.title
+    knex('projects').select().where('title', title).then((data) => {
+      res.render('singleview', data[0])
     })
   })
 
