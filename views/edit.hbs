@@ -1,0 +1,85 @@
+<!-- row 1 -->
+
+
+<form class="" action="/{{title}}/updated" method="post">
+
+<div class="flex">
+  <input type="text" name="" value="{{title}}">
+  <input type="text" name="" value="{{description}}">
+</div>
+
+<!-- row 2 -->
+
+<div class="flex">
+  <div class="">
+    <div class="">
+      <select name="skill" value="{{skill}}">
+        <option value="none">None</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="kind of good">Kind of Good</option>
+        <option value="full stack developer">Full Stack Developer</option>
+      </select>
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      <label for="">Will users need to signup for an email list?</label>
+        <select name="emailList" value="{{emailList}}">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+    </div>
+    <div class="">
+      <label for="">Will users need to create an account?</label>
+      <select name="database" value={{database}}>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+    </div>
+  </div>
+  <div class="">
+    <label for="">Approximate Time Commitment</label>
+    <select name="timeCommit" value="{{timeCommit}}">
+      <option value="Under 20 Hours">Under 20 Hours</option>
+      <option value="Under 40 Hours">Under 40 Hours</option>
+      <option value="Under 80 Hours">Under 80 Hours</option>
+      <option value="Under 100 Hours">Under 100 Hours</option>
+      <option value="">100+ Hours</option>
+    </select>
+  </div>
+</div>
+
+<!-- row 3 -->
+
+<div class="">
+  <div class="">
+    <label for="">What will be the main feature?</label>
+    <select name="mainFeature" value="{{mainFeature}}">
+      <option value="">Chat App</option>
+      <option value="">Scheduling App</option>
+      <option value="">Email Signup</option>
+      <option value="">CRUD</option>
+    </select>
+  </div>
+  <div class="">
+    <label for="">What will be a the sub feature #1?</label>
+    <select name="subFeature1" value="{{subFeature1}}">
+      <option value="CRUD">CRUD</option>
+      <option value="Email Signup">Email Signup</option>
+      <option value="API Request">API Request</option>
+    </select>
+  </div>
+  <div class="">
+    <label for="">What will be the sub feature #2?</label>
+    <select name="subFeature2" value="{{subFeature2}}">
+      <option value="CRUD">CRUD</option>
+      <option value="Email Signup">Email Signup</option>
+      <option value="API Request">API Request</option>
+    </select>
+  </div>
+</div>
+
+<button class="btn btn-success">Save Changes</button>
+<a href="/{{title}}/edit/delete" class="btn btn-danger">Delete Project</a>
+</form>
