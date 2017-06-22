@@ -1,1 +1,65 @@
-You made it to the singleview
+<!-- row 1 -->
+<div class="flex">
+  <h2 class="fill">{{title}}</h2>
+  <p class="fill">{{description}}</p>
+</div>
+
+<!-- row 2 -->
+
+<div class="flex">
+  <div class="">
+    <div class="">
+      {{skill}}
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      <label for="">Will users need to signup for an email list?</label>
+        {{emailList}}
+    </div>
+    <div class="">
+      <label for="">Will users need to create an account?</label>
+      {{database}}
+    </div>
+  </div>
+  <div class="">
+    <label for="">Approximate Time Commitment</label>
+    {{timeCommit}}
+  </div>
+</div>
+
+<!-- row 3 -->
+
+<div class="">
+  <div class="">
+    <label for="">What will be the main feature?</label>
+    {{mainFeature}}
+  </div>
+  <div class="">
+    <label for="">What will be a the sub feature #1?</label>
+    {{subFeature1}}
+  </div>
+  <div class="">
+    <label for="">What will be the sub feature #2?</label>
+    {{subFeature2}}
+  </div>
+</div>
+
+<div class="fill">
+  <a class="btn btn-warning" href="/{{title}}/edit">Edit Project</a>
+</div>
+
+
+<div class="flex">
+  <h1>Recommended Stack:</h1>
+  <div class="">
+    <h3>Backend Languages</h3>
+      {{lang4}}
+  </div>
+  <div class="">
+    <h3>Frontend Languages</h3>
+      {{lang3}}
+      {{lang2}}
+      {{lang1}}
+  </div>
+</div>
