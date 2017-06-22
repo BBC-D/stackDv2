@@ -1,0 +1,54 @@
+<div class="nav-left">
+  <a href="#">Learn More</a>
+  <a href="#">Testimonials</a>
+</div>
+
+<img class="mainLogo" src="../images/stack-logo.png">
+
+<div class="nav-right">
+  <a href="#">About Us</a>
+</div>
+
+
+<div class="rightDivWrapper">
+  <div class="rightDiv flex">
+    <h2>As Seen In:</h2>
+    <img class="seenIn" src="{{logo}}" alt="">
+  </div>
+  <div class="rightDiv flex">
+    <h2>Projects Built with <em>stackD</em></h2>
+  </div>
+  <div class="rightDiv flex">
+    <h2>Get in Touch</h2>
+    <a href="#" class="btn btn-primary" style="font-size: 1.5em;">The Button!</a>
+</div>
+</div>
+
+<div class="login flex">
+
+  <form class="loginForm flex" action="/profile/{{user.user_name}}" method="post">
+    {{user}}
+    <input class="fill" type="text" name="user_name" placeholder="Username">
+    <input class="fill" type="text" name="password" placeholder="Password">
+
+    <div class="buttons">
+      <button type="submit" class="btn btn-success">Login</button>
+      <button class="btn btn-primary" type="button">Sign Up</button>
+    </div>
+  </form>
+</div>
+
+<div class="stackAnimate">
+  <div class="lang4 flex langs">
+    <h4 class="lang h4lang4">{{lang4}}</h4>
+  </div>
+  <div class="lang3 flex langs">
+    <h4 class="lang h4lang3">{{lang3}}</h4>
+  </div>
+  <div class="lang2 flex langs">
+    <h4 class="lang h4lang2">{{lang2}}</h4>
+  </div>
+  <div class="lang1 flex langs">
+    <h4 class="lang h4lang1">{{lang1}}</h4>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<img class="logoProfile" src="../images/stack-logo.png" alt="">
+
+<div class="nav-right flex">
+  <a href="#">Learn More</a>
+  <a href="#">Testimonials</a>
+  <a href="#">About Us</a>
+</div>
+
+<div class="flex">
+  <h2 class="fill">Welcome to <em>stackD</em>, {{user_name}}!</h2>
+  <h4>Pairing your ideas with the best technologies</h4>
+</div>
+
+<h3>Your Current Projects:</h3>
+<div class="flex" style="width:85%;">
+    {{#each info}}
+    <a href="/profile/{{user_name}}/{{project_id}}">
+      <div class="project">
+        <h2>{{title}}</h2>
+      </div>
+    </a>
+    {{/each}}
+</div>
+
+<div class="flex">
+  <h1 class="fill">Which development stack should I use for: <span>{{type}}</span></h1>
+  <a href="/profile/{{user_name}}/newidea/add"><button class="btn btn-primary">My Next Idea</button></a>
+</div>

@@ -1,0 +1,163 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  width:100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fill {
+  width: 100%;
+  text-align: center;
+}
+
+.mainLogo {
+  margin-top:1%;
+  height: 300px;
+}
+
+.logoProfile {
+  position: fixed;
+  top:10px;
+  left: 20px;
+  width: 200px;
+}
+
+.login {
+  margin-top: 2.5%;
+}
+
+.loginForm {
+  width: 25%;
+}
+
+.loginForm input {
+  margin: 2%;
+  padding:5px;
+  font-size:1.25em;
+  margin-bottom:0;
+}
+
+.buttons {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.buttons * {
+  font-size: 1.5em;
+  width: 48%;
+}
+
+
+.stackAnimate {
+  position: fixed;
+  bottom:5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.langs {
+  display: none;
+  justify-content: center;
+}
+
+.lang {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: beige;
+  margin: .8%;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.h4lang1 {
+  width: 275px;
+}
+
+.h4lang2 {
+  width: 225px;
+  margin-left: 25px
+}
+
+.h4lang3 {
+  width: 175px;
+  margin-left: 50px
+}
+.h4lang4 {
+  width: 125px;
+  margin-left: 75px;
+}
+
+.nav-left {
+  width: 100%;
+  position: fixed;
+  top: 2px;
+  left: 10px;
+}
+
+.nav-left a {
+  margin: 2%;
+}
+
+.nav-right {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-right a {
+  margin: 1%;
+}
+
+.rightDivWrapper {
+  position: fixed;
+  top: 80px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 20%;
+}
+
+.rightDiv {
+  border: 2px solid black;
+  margin: 2%;
+  text-align: center;
+  padding: 10px;
+}
+
+.rightDiv h2 {
+  width: : 100%;
+}
+
+.seenIn {
+  height: 4em;;
+}
+
+.span {
+  opacity:0;
+}
+
+.project {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 1%;
+}

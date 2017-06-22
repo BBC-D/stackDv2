@@ -1,0 +1,73 @@
+<img src="" alt="">
+
+<div class="flex">
+  <h2>It's time to make my {{type}}<span class="span span1">.<span class="span span2">.<span class="span span3">.</span></span></span> <span class="span" id="adj">{{adj}}</span></h2>
+</div>
+
+
+<div class="flex">
+  <form action="/profile/{{user_name}}/newidea/completed" method="post">
+    <label for="">Project Title</label>
+    <input type="text" name="title" value="" required>
+    <label for="">Project Desciption</label>
+    <input type="text" name="description" value="">
+    <label for="">Developer Experience</label>
+    <select name="skill">
+      <option value="None">None</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Kind of Good">Kind of Good</option>
+      <option value="Full Stack Developer">Full Stack Developer</option>
+    </select>
+
+    <button type="button" id="advanced">Continue</button>
+    <div class="advanced flex span">
+      <label for="">Will users need to create an account?</label>
+      <select name="database">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+      <label for="">Will users need to signup for an email list></label>
+        <select name="emailList">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      <label for="">Approximate time commitment</label>
+      <select name="timeCommit">
+        <option value="Under 20 Hours">Under 20 Hours</option>
+        <option value="Under 40 Hours">Under 40 Hours</option>
+        <option value="Under 80 Hours">Under 80 Hours</option>
+        <option value="Under 100 Hours">Under 100 Hours</option>
+        <option value="">100+ Hours</option>
+      </select>
+    </div>
+
+    <button type="button" id="superAdvanced" class="span">Keep Going</button>
+    <div class="superAdvanced span">
+      <label for="">What will be the main feature?</label>
+      <select name="mainFeature">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="">What will be a the sub feature #1?</label>
+      <select name="subFeature1">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="">What will be the sub feature #2?</label>
+      <select name="subFeature2">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+    </div>
+
+    <button class="span" id="submit" type="submit" name="button">Submit</button>
+
+  </form>
+</div>
