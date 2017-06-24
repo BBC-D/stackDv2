@@ -18,6 +18,14 @@ $('#superAdvanced').click(function() {
   $('#submit').css('opacity', 1)
 })
 
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if (a == b) {
+        return opts.fn(this);
+    } else {
+        return opts.inverse(this);
+    }
+});
+
 })
 
 function animate() {

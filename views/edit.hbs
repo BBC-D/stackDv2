@@ -1,11 +1,12 @@
+
+
 <!-- row 1 -->
-
-
-<form class="" action="/{{title}}/updated" method="post">
+<form class="" action="/profile/{{big.user_name}}/{{big.info.project_id}}/updated" method="post">
 
 <div class="flex">
-  <input type="text" name="" value="{{title}}">
-  <input type="text" name="" value="{{description}}">
+  <input type="text" name="title" value="{{big.info.title}}">
+  <input type="text" name="description" value="{{big.info.description}}">
+  <input class="hidden" name="project_id" value="{{big.info.project_id}}">
 </div>
 
 <!-- row 2 -->
@@ -13,8 +14,8 @@
 <div class="flex">
   <div class="">
     <div class="">
-      <select name="skill" value="{{skill}}">
-        <option value="none">None</option>
+      <select name="skill" value="{{big.info.skill}}">
+        <option value="">N/A</option>
         <option value="beginner">Beginner</option>
         <option value="intermediate">Intermediate</option>
         <option value="kind of good">Kind of Good</option>
@@ -25,14 +26,16 @@
   <div class="">
     <div class="">
       <label for="">Will users need to signup for an email list?</label>
-        <select name="emailList" value="{{emailList}}">
+        <select name="emailList" value="{{big.info.emailList}}">
+          <option value="">N/A</option>
           <option value="No">No</option>
           <option value="Yes">Yes</option>
         </select>
     </div>
     <div class="">
       <label for="">Will users need to create an account?</label>
-      <select name="database" value={{database}}>
+      <select name="database" value={{big.info.database}}>
+        <option value="">N/A</option>
         <option value="No">No</option>
         <option value="Yes">Yes</option>
       </select>
@@ -40,7 +43,8 @@
   </div>
   <div class="">
     <label for="">Approximate Time Commitment</label>
-    <select name="timeCommit" value="{{timeCommit}}">
+    <select name="timeCommit" value="{{big.info.timeCommit}}">
+      <option value="">N/A</option>
       <option value="Under 20 Hours">Under 20 Hours</option>
       <option value="Under 40 Hours">Under 40 Hours</option>
       <option value="Under 80 Hours">Under 80 Hours</option>
@@ -55,16 +59,18 @@
 <div class="">
   <div class="">
     <label for="">What will be the main feature?</label>
-    <select name="mainFeature" value="{{mainFeature}}">
-      <option value="">Chat App</option>
-      <option value="">Scheduling App</option>
-      <option value="">Email Signup</option>
-      <option value="">CRUD</option>
+    <select name="mainFeature" value="{{big.info.mainFeature}}">
+      <option value="">N/A</option>
+      <option value="Chat App">Chat App</option>
+      <option value="Scheduling">Scheduling App</option>
+      <option value="Email">Email Signup</option>
+      <option value="CRUD">CRUD</option>
     </select>
   </div>
   <div class="">
     <label for="">What will be a the sub feature #1?</label>
-    <select name="subFeature1" value="{{subFeature1}}">
+    <select name="subFeature1" value="{{big.info.subFeature1}}">
+      <option value="">N/A</option>
       <option value="CRUD">CRUD</option>
       <option value="Email Signup">Email Signup</option>
       <option value="API Request">API Request</option>
@@ -72,7 +78,8 @@
   </div>
   <div class="">
     <label for="">What will be the sub feature #2?</label>
-    <select name="subFeature2" value="{{subFeature2}}">
+    <select name="subFeature2" value="{{big.info.subFeature2}}">
+      <option value="">N/A</option>
       <option value="CRUD">CRUD</option>
       <option value="Email Signup">Email Signup</option>
       <option value="API Request">API Request</option>
@@ -80,6 +87,6 @@
   </div>
 </div>
 
-<button class="btn btn-success">Save Changes</button>
-<a href="/{{title}}/edit/delete" class="btn btn-danger">Delete Project</a>
+<button type="submit" class="btn btn-success">Save Changes</button>
+<a href="/profile/{{big.user_name}}/{{big.info.title}}/edit/delete" class="btn btn-danger">Delete Project</a>
 </form>

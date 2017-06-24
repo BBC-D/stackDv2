@@ -1,7 +1,7 @@
 <!-- row 1 -->
 <div class="flex">
-  <h2 class="fill">{{title}}</h2>
-  <p class="fill">{{description}}</p>
+  <h2 class="fill">{{big.info.title}}</h2>
+  <p class="fill">{{big.info.description}}</p>
 </div>
 
 <!-- row 2 -->
@@ -9,22 +9,22 @@
 <div class="flex">
   <div class="">
     <div class="">
-      {{skill}}
+      {{big.info.skill}}
     </div>
   </div>
   <div class="">
     <div class="">
       <label for="">Will users need to signup for an email list?</label>
-        {{emailList}}
+        {{big.info.emailList}}
     </div>
     <div class="">
       <label for="">Will users need to create an account?</label>
-      {{database}}
+      {{big.info.database}}
     </div>
   </div>
   <div class="">
     <label for="">Approximate Time Commitment</label>
-    {{timeCommit}}
+    {{big.info.timeCommit}}
   </div>
 </div>
 
@@ -33,23 +33,26 @@
 <div class="">
   <div class="">
     <label for="">What will be the main feature?</label>
-    {{mainFeature}}
+    {{big.info.mainFeature}}
   </div>
   <div class="">
     <label for="">What will be a the sub feature #1?</label>
-    {{subFeature1}}
+    {{big.info.subFeature1}}
   </div>
   <div class="">
     <label for="">What will be the sub feature #2?</label>
-    {{subFeature2}}
+    {{big.info.subFeature2}}
   </div>
 </div>
 
+
 <div class="fill">
-  <a class="btn btn-warning" href="/{{title}}/edit">Edit Project</a>
+  <a class="btn btn-warning" href="/profile/{{big.user_name}}/{{big.info.title}}/edit">Edit Project</a>
 </div>
 
 
+<!-- Use handlebars if looper -->
+{{#if big.info.mainFeature}}
 <div class="flex">
   <h1>Recommended Stack:</h1>
   <div class="">
@@ -62,4 +65,7 @@
       {{lang2}}
       {{lang1}}
   </div>
+{{/if}}
+
+
 </div>
