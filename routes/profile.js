@@ -92,12 +92,38 @@ router.post('/', (req, res) =>{
     var user_name = req.params.user_name
     var title = req.params.title
     knex('projects').select().where('title', title).then((info) => {
-      var big = {
-        info: info[0],
-        user_name: user_name
+      // var big = {
+      //   info: info[0],
+      //   user_name: user_name
+      // }
+      if(info[0].skill === 'beginner') {
+        res.render('singleview', {
+          info: info[0],
+          user_name: user_name,
+          lang1: 'HTML',
+          lang2: 'CSS',
+          lang3: 'jQuery',
+          lang4: 'Node.js'
+        })
+      } else if(info[0].skill === 'intermediate') {
+        res.render('singleview', {
+          info: info[0],
+          user_name: user_name,
+          lang1: 'HTML & Sass',
+          lang2: 'jQuery',
+          lang3: 'Node.js',
+          lang4: 'Heroku'
+        })
+      } else if(info[0].skill === 'advanced') {
+        res.render('singleview', {
+          info: info[0],
+          user_name: user_name,
+          lang1: 'Angular 4',
+          lang2: 'Sass',
+          lang3: 'Node.js',
+          lang4: 'Heroku'
+        })
       }
-      console.log(big);
-      res.render('singleview', { big  })
     })
   })
 

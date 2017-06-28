@@ -1,7 +1,7 @@
 <!-- row 1 -->
 <div class="flex">
-  <h2 class="fill">{{big.info.title}}</h2>
-  <p class="fill">{{big.info.description}}</p>
+  <h2 class="fill">{{info.title}}</h2>
+  <p class="fill">{{info.description}}</p>
 </div>
 
 <!-- row 2 -->
@@ -9,22 +9,22 @@
 <div class="flex">
   <div class="">
     <div class="">
-      {{big.info.skill}}
+      {{info.skill}}
     </div>
   </div>
   <div class="">
     <div class="">
       <label for="">Will users need to signup for an email list?</label>
-        {{big.info.emailList}}
+        {{info.emailList}}
     </div>
     <div class="">
       <label for="">Will users need to create an account?</label>
-      {{big.info.database}}
+      {{info.database}}
     </div>
   </div>
   <div class="">
     <label for="">Approximate Time Commitment</label>
-    {{big.info.timeCommit}}
+    {{info.timeCommit}}
   </div>
 </div>
 
@@ -33,39 +33,49 @@
 <div class="">
   <div class="">
     <label for="">What will be the main feature?</label>
-    {{big.info.mainFeature}}
+    {{info.mainFeature}}
   </div>
   <div class="">
     <label for="">What will be a the sub feature #1?</label>
-    {{big.info.subFeature1}}
+    {{info.subFeature1}}
   </div>
   <div class="">
     <label for="">What will be the sub feature #2?</label>
-    {{big.info.subFeature2}}
+    {{info.subFeature2}}
   </div>
 </div>
 
 
 <div class="fill">
-  <a class="btn btn-warning" href="/profile/{{big.user_name}}/{{big.info.title}}/edit">Edit Project</a>
+  <a class="btn btn-warning" href="/profile/{{user_name}}/{{info.title}}/edit">Edit Project</a>
 </div>
 
 
 <!-- Use handlebars if looper -->
-{{#if big.info.mainFeature}}
+
+
 <div class="flex">
-  <h1>Recommended Stack:</h1>
-  <div class="">
-    <h3>Backend Languages</h3>
-      {{lang4}}
+  <div class="border langDiv">
+    <div class="lang4Real realLang">
+      <h3 class='langTitle'>{{lang4}}</h3>
+        <a href="#">Tutorial 1</a>
+        <a href="#">Tutorial 2</a>
+    </div>
+    <div class="lang3Real realLang">
+      <h3 class='langTitle'>{{lang3}}</h3>
+        <a href="#">Tutorial 1</a>
+        <a href="#">Tutorial 2</a>
+    </div>
+    <div class="lang2Real realLang">
+      <h3 class='langTitle'>{{lang2}}</h3>
+        <a href="#">Tutorial 1</a>
+        <a href="#">Tutorial 2</a>
+    </div>
+    <div class="lang1Real realLang">
+      <h3 class='langTitle'>{{lang1}}</h3>
+        <a href="#">Tutorial 1</a>
+        <a href="#">Tutorial 2</a>
+    </div>
   </div>
-  <div class="">
-    <h3>Frontend Languages</h3>
-      {{lang3}}
-      {{lang2}}
-      {{lang1}}
-  </div>
-{{/if}}
-
-
+</div>
 </div>

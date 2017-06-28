@@ -4,6 +4,36 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+// var Handlebars = require('hbs');
+//
+// Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
+//
+//     switch (operator) {
+//         case '==':
+//             return (v1 == v2) ? options.fn(this) : options.inverse(this);
+//         case '===':
+//             return (v1 === v2) ? options.fn(this) : options.inverse(this);
+//         case '!=':
+//             return (v1 != v2) ? options.fn(this) : options.inverse(this);
+//         case '!==':
+//             return (v1 !== v2) ? options.fn(this) : options.inverse(this);
+//         case '<':
+//             return (v1 < v2) ? options.fn(this) : options.inverse(this);
+//         case '<=':
+//             return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+//         case '>':
+//             return (v1 > v2) ? options.fn(this) : options.inverse(this);
+//         case '>=':
+//             return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+//         case '&&':
+//             return (v1 && v2) ? options.fn(this) : options.inverse(this);
+//         case '||':
+//             return (v1 || v2) ? options.fn(this) : options.inverse(this);
+//         default:
+//             return options.inverse(this);
+//     }
+// });
+
 
 var index = require('./routes/index');
 var profile = require('./routes/profile');
@@ -12,7 +42,9 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+// app.engine('Handlebars', Handlebars.create().__express)
 app.set('view engine', 'hbs');
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
