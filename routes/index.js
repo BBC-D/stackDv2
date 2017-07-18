@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var linkQuery = require('../db/linkQuery');
 var knex = require('../db/knex');
+var bcrypt = require('bcryptjs')
 
 
 /* GET home page. */
@@ -42,6 +43,35 @@ router.get('/', function(req, res, next) {
 ]
   res.render('index', langSet[(num)]);
 });
+
+
+router.post('/login', function(req, res, next) {
+  knex('users').select().where('user_name', req.body.user_name).first()
+  .then(function(user){
+    console.log(user);
+    if(user){
+      bcrypt.compare(
+        req.body.password, user.password
+      ).then(function(data){
+        console.log(user.password);
+        console.log('HELLOHELLO' , user.user_name);
+        console.log(data);
+        // console.log('USERUSERUSER' , user.id);
+        if(data){
+          // req.session.id = user.id
+          res.redirect('/profile/' + user.user_name)
+        } else {
+          res.redirect('/no/can/do/')
+        }
+      })
+    } else {
+      res.redirect('/invalid/creds')
+    }
+  })
+})
+
+
+
 
 router.get('/:title', function(req, res, next) {
   console.log('made it');
@@ -124,9 +154,40 @@ router.get('/signup/forthebestwebsiteever', function(req, res, next) {
   res.render('signup', langSet[(num)]);
 });
 
-router.post('/signup/newestuser', (req,res,next) => {
-  knex('projects').update({
-    
+// router.post('/signup/newestuser', (req,res,next) => {
+//   knex('projects').update({
+//
+//   })
+// })
+
+
+
+//router mounted at localhost:3000/signup
+router.post('/signup/newestuser', function(req,res,next){
+  knex('users').select().where(
+    'user_name', req.body.user_name
+  ).first().then((user)=>{
+    if(user){
+      console.log('you already have an account with us');
+      res.redirect('/try/again/please/')
+    } else {
+      bcrypt.hash(req.body.password,10)
+        .then((hash) => {
+          var user = req.body;
+          user.password = hash
+          knex('users').insert({
+            user_name: user.user_name,
+            email: user.email,
+            password: user.password
+          }).then(function(){
+            knex('users').where(
+              'user_name', user.user_name
+            ).first().then(function(user){
+              res.redirect('/profile/' + user.user_name)
+            })
+          })
+        })
+    }
   })
 })
 

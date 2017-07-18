@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .fill {
@@ -201,4 +202,26 @@ body {
 
 .signupButtons * {
   margin: 5%;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 1%;
+  margin: 2%;
+}
+
+.boxy {
+  border: 2px solid black;
+  margin: 2%;
+  width: 50%;
+  padding: 1%;
+  text-align: center;
+}
+
+.bn {
+  margin-top: 2%;
+}
+
+.thing {
+  width: 25%;
 }

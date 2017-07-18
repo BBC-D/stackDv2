@@ -8,21 +8,21 @@
 
 <div class="flex">
   <div class="">
-    <div class="">
-      {{info.skill}}
+    <div class="flex box">
+      <span style="font-weight:bold;"> <em>Skill Level:</em></span> {{info.skill}}
     </div>
   </div>
   <div class="">
-    <div class="">
+    <div class="flex box">
       <label for="">Will users need to signup for an email list?</label>
         {{info.emailList}}
     </div>
-    <div class="">
+    <div class="flex box">
       <label for="">Will users need to create an account?</label>
       {{info.database}}
     </div>
   </div>
-  <div class="">
+  <div class="flex box thing">
     <label for="">Approximate Time Commitment</label>
     {{info.timeCommit}}
   </div>
@@ -31,22 +31,22 @@
 <!-- row 3 -->
 
 <div class="">
-  <div class="">
+  <div class="flex box">
     <label for="">What will be the main feature?</label>
     {{info.mainFeature}}
   </div>
-  <div class="">
+  <div class="flex box">
     <label for="">What will be a the sub feature #1?</label>
     {{info.subFeature1}}
   </div>
-  <div class="">
+  <div class="flex box">
     <label for="">What will be the sub feature #2?</label>
     {{info.subFeature2}}
   </div>
 </div>
 
 
-<div class="fill">
+<div class="fill bn">
   <a class="btn btn-warning" href="/profile/{{user_name}}/{{info.title}}/edit">Edit Project</a>
 </div>
 
