@@ -7,19 +7,10 @@ setTimeout(span3, 1200)
 setTimeout(adj, 1600)
 
 $('#advanced').click(function() {
-  $('#advanced').css('opacity', 0)
+  $('#advanced').css('display', 'none')
   $('.advanced').css('opacity', 1)
-  $('#superAdvanced').css('opacity', 1)
-})
-
-$('#superAdvanced').click(function() {
-  $('#superAdvanced').css('opacity', 0)
-  $('.superAdvanced').css('opacity', 1)
   $('#submit').css('opacity', 1)
 })
-
-
-
 
 })
 

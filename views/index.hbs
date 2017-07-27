@@ -1,13 +1,18 @@
-<div class="nav-left">
+<div class="flex bg">
+
+
+
+
+<!-- <div class="nav-left">
   <a href="#">Learn More</a>
   <a href="#">Testimonials</a>
-</div>
+</div> -->
 
 <img class="mainLogo" src="../images/stack-logo.png">
 
-<div class="nav-right">
+<!-- <div class="nav-right">
   <a href="#">About Us</a>
-</div>
+</div> -->
 
 
 <div class="rightDivWrapper">
@@ -24,16 +29,16 @@
 </div>
 </div>
 
-<div class="login flex">
+<div class="flex login ">
 
   <form class="loginForm flex" action="/login" method="post">
     {{user}}
-    <input class="fill" type="text" name="user_name" placeholder="Username">
-    <input class="fill" type="password" name="password" placeholder="Password">
+    <input class="fill in" type="text" name="user_name" placeholder="Username">
+    <input class="fill in" type="password" name="password" placeholder="Password">
 
-    <div class="buttons">
-      <button type="submit" class="btn btn-success">Login</button>
-      <a href='/signup/forthebestwebsiteever' class="btn btn-primary" type="button">Sign Up</a>
+    <div class="flex buttons">
+      <button type="submit" class="btn btn-success ls">Login</button>
+      <a href='/signup/forthebestwebsiteever' class="btn btn-primary ls" type="button">Sign Up</a>
     </div>
   </form>
 </div>
@@ -51,4 +56,6 @@
   <div class="lang1 flex langs thing">
     <h4 class="lang h4lang1">{{lang1}}</h4>
   </div>
+</div>
+
 </div>

@@ -1,104 +1,117 @@
-<img src="" alt="">
+<div class="flex">
+
+
+<div class="flex">
+  <img class="itl thing" src="../../../images/stack-logo.png" alt="">
+</div>
 
 <div class="flex boxy">
   <h2>It's time to make {{type}}<span class="span span1">.<span class="span span2">.<span class="span span3">.</span></span></span> <span class="span" id="adj">{{adj}}</span></h2>
 </div>
 
 
-<div class="flex">
-  <form action="/profile/{{user_name}}/newidea/completed" method="post">
-    <div class="form-group">
-      <label for="">Project Title:</label>
+
+<!-- <div class="flex"> -->
+  <form action="/profile/{{user_name}}/newidea/completed" method="post" class="flex">
+  <div class="flex qw form-group">
+      <label for="" class="h1">Project Title:</label>
       <input type="text" class="form-control" name="title" placeholder="Example input">
+  </div>
+  <div class="flex qw form-group">
+      <label for="2" class="h1">Project description</label>
+      <input type="text" class="form-control" name="description" placeholder="Describe Your Project Here">
+  </div>
+  <div class="flex exp">
+    <label for="" style="width:100%; text-align: center;" class="h1">Developer Experience</label>
+    <div class="flex qw form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="beginner"> Beginner
+      </label>
     </div>
-    <div class="form-group">
-      <label for="2">Project description</label>
-      <input type="text" class="form-control" name="description" placeholder="Another input">
+    <div class="flex qw form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="intermediate"> Intermediate
+      </label>
     </div>
-    <label for="">Developer Experience</label>
-    <div class="form-check form-check-inline">
-    <label class="form-check-label">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="beginner"> Beginner
-    </label>
+    <div class="flex qw form-check form-check-inline disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="advanced" disabled> Advanced
+      </label>
+    </div>
+  </div>
+  <div class="flex butt">
+    <button type="button" id="advanced" class="btn btn-primary">Continue</button>
+  </div>
+
+<div class="extra advanced span">
+
+
+<div class="advanced container flex span">
+  <div class="row">
+    <label for="" class="h1">Will users need to create an account?</label>
+  <div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="no"> No
+  </label>
   </div>
   <div class="form-check form-check-inline">
     <label class="form-check-label">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="intermediate"> Intermediate
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="yes"> Yes
     </label>
   </div>
-  <div class="form-check form-check-inline disabled">
+
+
+
+
+    <label for="" class="h1">Will users need to sign up for an email list?</label>
+    <div class="form-check form-check-inline">
     <label class="form-check-label">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="advanced" disabled> Advanced
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="no"> No
     </label>
-  </div>
-
-
-    <div class="advanced container flex span">
-      <div class="row">
-      <label for="">Will users need to create an account?</label>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="yes"> Yes
-        </label>
-        </div>
-        <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> No
-        </label>
-      </div>
-      <label for="">Will users need to sign up for an email list?</label>
-      <div class="form-check form-check-inline">
+    </div>
+    <div class="form-check form-check-inline">
       <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="yes"> Yes
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="yes"> Yes
       </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> No
-      </label>
-      </div>
-      <label for="">Approximate Time Commitment?</label>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="yes"> Under 20 Hours
-      </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 40 Hours
-      </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 60 Hours
-      </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 80 Hours
-      </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 100 Hours
-      </label>
-      </div>
-      <div class="form-check form-check-inline">
-      <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Over 100 Hours
-      </label>
-      </div>
+    </div>
+    <!-- <label for="">Approximate Time Commitment?</label>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="yes"> Under 20 Hours
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 40 Hours
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 60 Hours
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 80 Hours
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Under 100 Hours
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no"> Over 100 Hours
+    </label>
+    </div>
     </div>
   </div>
+</div> -->
+<!-- </div> -->
 
 
-
-
-
-
-
-
-    <div class="superAdvanced span">
+    <!-- <div class="superAdvanced span">
       <label for="">What will be the main feature?</label>
       <select name="mainFeature">
         <option value="Chat App">Chat App</option>
@@ -116,14 +129,25 @@
         <option value="">Feature 1</option>
         <option value="">Feature 2</option>
       </select>
+    </div> -->
+
+
+    <!-- <button type="button" id="superAdvanced" class="span btn btn-warning">Keep Going</button> -->
+  </div>
+</div>
+</div>
+
+    <div class="flex butt">
+      <button class="span btn btn-success" id="submit" type="submit" name="button">Submit</button>
     </div>
 
-    <button type="button" id="advanced" class="btn btn-primary">Continue</button>
-    <button type="button" id="superAdvanced" class="span btn btn-warning">Keep Going</button>
-    <button class="span btn btn-success" id="submit" type="submit" name="button">Submit</button>
 
-  </form>
-</div>
+
+
+
+    </form>
+
+    </div>
 
 
 
