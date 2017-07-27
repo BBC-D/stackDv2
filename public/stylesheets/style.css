@@ -76,7 +76,11 @@ body {
 
 .mainLogo {
   height: 250px;
-  margin-top: -15%;
+  margin-top: -8%;
+}
+
+.meep {
+  margin-top: -10%;
 }
 
 .logoProfile {
@@ -192,10 +196,12 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   width: 20%;
+
 }
 
 .rightDiv {
   border: 2px solid black;
+  border-radius: 15px;
   margin: 2%;
   text-align: center;
   padding: 10px;
