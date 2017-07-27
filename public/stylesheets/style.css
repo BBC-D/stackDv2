@@ -76,7 +76,7 @@ body {
 
 .mainLogo {
   height: 250px;
-  margin-top: -8%;
+  margin-top: -12%;
 }
 
 .meep {
@@ -455,7 +455,7 @@ body {
       height: 180px;
     }
     .login {
-      margin-top: -34%;
+      margin-top: -20%;
     }
 
     .loginForm {
