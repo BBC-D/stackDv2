@@ -70,6 +70,10 @@ router.post('/login', function(req, res, next) {
   })
 })
 
+router.get('/invalid/creds', (req,res, next) => {
+  res.send("Invalid credentials. Please try again <a href='/'>here</a>.")
+})
+
 
 
 
