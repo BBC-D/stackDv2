@@ -69,7 +69,6 @@ router.post('/', (req, res) =>{
   });
 
   router.post('/:user_name/newidea/completed', (req,res,next) => {
-    console.log('fuck me mate');
     var user_name = req.params.user_name
     var body = req.body
     knex('projects').insert({
@@ -89,8 +88,8 @@ router.post('/', (req, res) =>{
 
   router.get('/:user_name/:title', function(req, res, next) {
     console.log('made it');
-    var user_name = req.params.user_name
-    var title = req.params.title
+    var user_name = req.params.user_name;
+    var title = req.params.title;
     knex('projects').select().where('title', title).then((info) => {
       // var big = {
       //   info: info[0],
