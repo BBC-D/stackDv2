@@ -1,25 +1,16 @@
 $(document).ready(function() {
 
 setTimeout(animate, 1000)
-setTimeout(span1, 400)
-setTimeout(span2, 800)
-setTimeout(span3, 1200)
-setTimeout(adj, 1600)
+setTimeout(span1, 800)
+setTimeout(span2, 1400)
+setTimeout(span3, 2000)
+setTimeout(adj, 2600)
 
 $('#advanced').click(function() {
-  $('#advanced').css('opacity', 0)
+  $('#advanced').css('display', 'none')
   $('.advanced').css('opacity', 1)
-  $('#superAdvanced').css('opacity', 1)
-})
-
-$('#superAdvanced').click(function() {
-  $('#superAdvanced').css('opacity', 0)
-  $('.superAdvanced').css('opacity', 1)
   $('#submit').css('opacity', 1)
 })
-
-
-
 
 })
 

@@ -1,29 +1,34 @@
+
+
 <img class="logoProfile" src="../images/stack-logo.png" alt="">
 
-<div class="nav-right flex">
-  <a href="#">Learn More</a>
-  <a href="#">Testimonials</a>
-  <a href="#">About Us</a>
-</div>
+<div class="flex prof">
 
-<div class="flex">
-  <h2 class="fill">Welcome to <em>stackD</em>, {{big.user_name}}!</h2>
-  <h4>Pairing your ideas with the best technologies</h4>
+
+<div class="flex z">
+  <h2 class="flex fill zx">Welcome to StackD, {{big.user_name}}!</h2>
+  <h4 class="flex"><em>Pairing the best ideas with the best technologies</em></h4>
 </div>
 
 
-<h3>Your Current Projects:</h3>
-<div class="flex" style="width:85%;">
-    {{#each big.info}}
-    <!-- {{info}} -->
+<div class="flex proj">
+  <h3>Your Current Projects:</h3>
+  <div class="flex" style="width:85%;">
+      {{#each big.info}}
+      <!-- {{info}} -->
 
-      <a href="/profile/{{this.user}}/{{this.title}}" class="project btn btn-primary">
-        <h2>{{this.title}}</h2>
-      </a>
-    {{/each}}
+        <a href="/profile/{{this.user}}/{{this.title}}" class="project btn btn-primary">
+          <h2>{{this.title}}</h2>
+        </a>
+      {{/each}}
+  </div>
 </div>
 
-<div class="flex">
-  <h1 class="fill">Which development stack should I use for: <span>{{type}}</span></h1>
+
+
+<div class="flex bh">
+  <h2 class="fill">Which development stack should I use for: <span>{{type}}</span></h2>
   <a href="/profile/{{big.user_name}}/newidea/add"><button class="btn btn-primary">My Next Idea</button></a>
+</div>
+
 </div>

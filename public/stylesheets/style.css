@@ -12,6 +12,19 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url('../images/gradient.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.ls {
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.in {
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 .flex {
@@ -19,7 +32,43 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
+.signupDiv {
+  margin-bottom: 100%;
+}
+
+.signupInputs {
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgba(215,215,215,.3);
+  border-radius: 15px;
+  /*position: relative;*/
+  /*top:30px;*/
+}
+
+.row {
+  width: 100%;
+  margin: 2%;
+  text-align: center;
+}
+
+.row label {
+  width: 100%;
+}
+
+.signupButtons {
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgba(215,215,215,.3);
+  border-radius: 15px;
+  margin-top: 2%;
+  /*position: relative;*/
+  /*top:40px;*/
+}
+
+
 
 .fill {
   width: 100%;
@@ -27,8 +76,12 @@ body {
 }
 
 .mainLogo {
-  margin-top:1%;
-  height: 300px;
+  height: 250px;
+  margin-top: -10%;
+}
+
+.meep {
+  margin-top: -10%;
 }
 
 .logoProfile {
@@ -39,11 +92,12 @@ body {
 }
 
 .login {
-  margin-top: 2.5%;
+  align-self: flex-start;
+  /*margin-top: -15%;*/
 }
 
 .loginForm {
-  width: 25%;
+  width: 50%;
 }
 
 .loginForm input {
@@ -92,20 +146,24 @@ body {
 
 .h4lang1 {
   width: 275px;
+  background-color: rgba(236, 140, 114,.8);
 }
 
 .h4lang2 {
   width: 225px;
-  margin-left: 25px
+  margin-left: 25px;
+  background-color: rgba(128, 212, 142,.8);
 }
 
 .h4lang3 {
   width: 175px;
-  margin-left: 50px
+  margin-left: 50px;
+  background-color: rgba(132, 132, 232,.8);
 }
 .h4lang4 {
   width: 125px;
   margin-left: 75px;
+  background-color: rgba(241, 238, 121, .8);
 }
 
 .nav-left {
@@ -139,10 +197,12 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   width: 20%;
+
 }
 
 .rightDiv {
   border: 2px solid black;
+  border-radius: 15px;
   margin: 2%;
   text-align: center;
   padding: 10px;
@@ -194,11 +254,219 @@ body {
   width: 100%;
 }
 
-.signupDiv {
-  margin: 10%;
-  width: 55%;
+ {
+  /*margin: 10%;*/
+  width: 100%;
 }
 
 .signupButtons * {
   margin: 5%;
 }
+
+.box {
+  border: 2px solid black;
+  padding: 1%;
+  margin: 2%;
+}
+
+.z {
+  border: 2px solid black;
+  background-color: rgba(	205,129,110,.5);
+  width: 60%;
+  z-index: 1;
+  margin: 2%;
+  border-radius: 15px;
+}
+
+.zx {
+  border: 2px solid black;
+  background-color: rgba(128, 212, 142,.8);
+  width: 80%;
+  border-radius: 15px;
+  padding: 2%;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.proj {
+  border: 2px solid black;
+  background-color: rgba(	250,250,210,.7);
+  width: 60%;
+  z-index: 1;
+  margin: 2%;
+  border-radius: 15px;
+}
+
+.proj h3 {
+  text-decoration: underline;
+  color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fill h4 {
+  width: 100%;
+}
+
+.extra {
+  border: 2px solid black;
+  padding: 2%;
+  border-radius: 15px;
+  background-color:  rgba(215,215,215,.3);
+}
+
+.h1 {
+  font-size: 1.5em;
+}
+
+.bh {
+  border: 2px solid black;
+  width: 60%;
+  padding: 2%;
+  border-radius: 15px;
+  background-color:  rgba(115,145,195,.3);
+}
+
+.bh a button {
+  font-size: 2em;
+  border: 2px solid black;
+}
+
+.prof {
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+
+
+.boxy {
+  border: 2px solid black;
+  margin: 2%;
+  width: 75%;
+  padding: 1%;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: rgba(215,215,215,.3);
+  box-shadow: 3px 2px 20px silver;
+}
+
+.qw {
+  width: 68%;
+  text-align: center;
+}
+
+.butt {
+  width: 100%;
+  margin: 2%;
+}
+
+.itl {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.exp {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 35%;
+  background-color: rgba(215,215,215,.3)
+}
+
+.bg {
+  height: 100vh;
+}
+
+.bn {
+  margin-top: 2%;
+}
+
+.thing {
+  width: 25%;
+}
+
+.row input {
+  width: 75%;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+.signupButtons .btn {
+  border: 2px solid black;
+  font-size: 1.4em;
+}
+
+.h2 {
+  width: 100%;
+}
+
+.h2 h2 {
+  z-index: 1;
+  border: 2px solid rgba(241, 238, 121, .8);
+  border-radius: 15px;
+  background-color: rgba(236, 140, 114,.8);
+  padding: 2%;
+  text-align: center;
+  font-size: 1.1em;
+  width: 46%;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+
+
+@media (max-width:1080px) {
+  .rightDivWrapper {
+    display: none;
+  }
+}
+
+@media(max-width:690px) {
+  .signupDiv {
+    width: 90%;
+  }
+
+  .findIt h2 {
+    width: 90%;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 555px) {
+
+    .row input {
+      width: 90%;
+    }
+
+    .signupButtons {
+      top: 195px;
+    }
+  }
+
+  @media (max-width: 470px) {
+
+    .mainLogo {
+      margin-top: -30%;
+      height: 180px;
+    }
+    .login {
+      margin-top: -20%;
+    }
+
+    .loginForm {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 280px) {
+
+    .buttons {
+      font-size: .6em;
+    }
+  }

@@ -1,20 +1,33 @@
+<div class="flex bg">
+
+
 <img class="logoProfile" src="../images/stack-logo.png" alt="">
+
+<div class="flex h2 findIt">
+  <h2>Find Your Project's Stack!</h2>
+</div>
+
 
 <div class="flex signupDiv">
   <form class="" action="/signup/newestuser" method="post">
-    <div class="singupInputs">
-      <label for="">User Name</label>
-      <input type="text" name="user_name" value="">
-      <label for="">email</label>
-      <input type="text" name="email" value="">
-      <label for="">Password</label>
-      <input type="text" name="password" value="">
+    <div class="flex signupInputs">
+      <div class="flex row">
+        <label for="">User Name</label>
+        <input type="text" name="user_name" value="" placeholder="JDoe24">
+      </div>
+      <div class="flex row">
+        <label for="">Email</label>
+        <input type="text" name="email" value="" placeholder="JDoe@gmail.com">
+      </div>
+      <div class="flex row">
+        <label for="">Password</label>
+        <input type="password" name="password" value="" placeholder="password">
+      </div>
     </div>
     <div class="flex signupButtons">
-      <button type="button" class='btn btn-primary' name="button">Sign Up</button>
+      <button type="submit" class='btn btn-primary' name="button">Sign Up</button>
       <a href='/' class='btn btn-warning' name="button">Home</a>
     </div>
-
   </form>
 </div>
 
@@ -35,4 +48,6 @@
   <div class="lang1 flex langs thing">
     <h4 class="lang h4lang1">{{lang1}}</h4>
   </div>
+</div>
+
 </div>
